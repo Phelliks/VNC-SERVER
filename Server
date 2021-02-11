@@ -1,0 +1,22 @@
+
+apt-get update
+
+apt-get upgrade
+
+apt-get install xfce4
+
+apt-get install xfce4-goodies
+
+apt-get install tightvncserver
+
+echo #!/bin/bash>.vnc/xstartup
+
+echo xrdb $HOME/.Xresources>.vnc/xstartup
+
+echo startxfce4 &>.vnc/xstartup
+
+chmod +x xstartup
+
+apt-get install firefox
+
+vncserver
